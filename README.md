@@ -69,7 +69,7 @@ Key KPIs include:
 
 ### Dashboard Preview
 
-![Executive Dashboard](./dashboards/Executive_Dashboard.png)
+![Executive Dashboard](./Dashboards/SS%20Dashboard.png)
 
 ---
 
@@ -83,7 +83,7 @@ Interactive geographic dashboard visualizing:
 
 ### Dashboard Preview
 
-![Sales Map](./dashboards/Sales_Map.png)
+![Sales Map](./Dashboards/Dashboard.png)
 
 ---
 
@@ -93,7 +93,7 @@ Interactive geographic dashboard visualizing:
 
 This dual-axis visualization compares sales and profit performance across business regions to identify high-performing and underperforming operational areas.
 
-![Dual Axis Visualization](./tables/Dual%20Axis.png)
+![Dual Axis Visualization](./Tables/Dual%20Axis.png)
 
 ---
 
@@ -104,7 +104,7 @@ Comparative category analysis highlighting sales performance across:
 - Supplies
 - Technology
 
-![Category Sales Comparison](./tables/More%20Sales.png)
+![Category Sales Comparison](./Tables/More%20Sales.png)
 
 ---
 
@@ -118,7 +118,7 @@ Regional segmentation dashboard analyzing:
 
 The dashboard supports comparative operational analysis across multiple business regions.
 
-![Regional Segment Analysis](./tables/Region.png)
+![Regional Segment Analysis](./Tables/Region.png)
 
 ---
 
@@ -126,7 +126,7 @@ The dashboard supports comparative operational analysis across multiple business
 
 Trend analysis dashboard tracking category sales growth over time to identify performance patterns and sales movement trends.
 
-![Category Trends](./tables/Sales.png)
+![Category Trends](./Tables/Sales.png)
 
 ---
 
@@ -145,22 +145,22 @@ Trend analysis dashboard tracking category sales growth over time to identify pe
 ```text
 Tableau-Sales-Dashboard/
 │
-├── data/
+├── Data/
 │   ├── 2026-Tableau-Hands-On.xlsx
 │   ├── 2026-Traffic Accidents.csv
 │   └── README.md
 │
-├── dashboards/
-│   ├── Executive_Dashboard.png
-│   └── Sales_Map.png
+├── Dashboards/
+│   ├── SS Dashboard.png
+│   └── Dashboard.png
 │
-├── tables/
+├── Tables/
 │   ├── Dual Axis.png
 │   ├── More Sales.png
 │   ├── Region.png
 │   └── Sales.png
 │
-├── reports/
+├── Reports/
 │   └── Tableau_Sales_Dashboard.pdf
 │
 └── README.md
@@ -172,15 +172,15 @@ Tableau-Sales-Dashboard/
 
 | File | Description |
 |------|-------------|
-| `data/2026-Tableau-Hands-On.xlsx` | Primary Tableau sales and business reporting dataset |
-| `data/2026-Traffic Accidents.csv` | Geographic and analytical dataset used for visualization exercises |
-| `dashboards/Executive_Dashboard.png` | Executive KPI dashboard |
-| `dashboards/Sales_Map.png` | Geographic sales analysis dashboard |
-| `tables/Dual Axis.png` | Sales vs profit regional comparison |
-| `tables/More Sales.png` | Category sales comparison visualization |
-| `tables/Region.png` | Regional segmentation dashboard |
-| `tables/Sales.png` | Category trend analysis visualization |
-| `reports/Tableau_Sales_Dashboard.pdf` | Exported Tableau dashboard report |
+| `Data/2026-Tableau-Hands-On.xlsx` | Primary Tableau sales and business reporting dataset |
+| `Data/2026-Traffic Accidents.csv` | Geographic and analytical dataset used for visualization exercises |
+| `Dashboards/SS Dashboard.png` | Executive KPI dashboard |
+| `Dashboards/Dashboard.png` | Geographic sales analysis dashboard |
+| `Tables/Dual Axis.png` | Sales vs profit regional comparison |
+| `Tables/More Sales.png` | Category sales comparison visualization |
+| `Tables/Region.png` | Regional segmentation dashboard |
+| `Tables/Sales.png` | Category trend analysis visualization |
+| `Reports/Tableau_Sales_Dashboard.pdf` | Exported Tableau dashboard report |
 
 ---
 
