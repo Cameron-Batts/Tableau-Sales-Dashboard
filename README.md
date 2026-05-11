@@ -211,8 +211,11 @@ The datasets were used to analyze:
 
 ---
 
-# Portfolio
+# Author
 
-Portfolio Website: https://cameronbatts.github.io/Portfolio.html
+Cameron Batts
 
-GitHub Profile: https://github.com/Cameron-Batts
+GitHub: https://github.com/Cameron-Batts
+
+Portfolio: https://cameron-batts.github.io
+
