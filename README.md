@@ -1,31 +1,218 @@
-# North American Sales & Customer Analytics Dashboard
+# Tableau Sales Dashboard
 
-**Tools:** Tableau · Sales Analytics · Data Visualization · Geographic Mapping
+Interactive Tableau dashboards focused on executive reporting, regional sales analysis, profitability monitoring, customer insights, and business performance visualization.
 
----
-
-## Problem
-
-Sales leadership lacked a unified view of regional performance, category trends, customer profitability, and shipping compliance across North American markets spanning four regions and three product categories.
-
-## Approach
-
-Built a multi-tab Tableau dashboard featuring an interactive geographic sales map, category trend lines across 2022 to 2025, customer-level sales and profit breakdowns, regional drill-downs for West, Central, South, and East, and a product-level shipping performance tracker flagging items exceeding delivery targets.
-
-## Impact
-
-Enabled leadership to identify that Technology was the top-performing category at $272K in peak quarterly sales, pinpoint the West region as the highest revenue driver at $457K, and surface individual customers with negative profit margins requiring account review, supporting faster and more targeted sales decisions.
+This project demonstrates the use of Tableau for building executive-level business intelligence dashboards that support data-driven decision-making through KPI reporting, geographic analysis, trend analysis, and interactive visual storytelling.
 
 ---
 
-## Files
+# Project Overview
+
+This repository contains multiple Tableau dashboards and visualizations analyzing:
+- sales performance
+- profit trends
+- customer behavior
+- regional analysis
+- category performance
+- operational metrics
+- profitability ratios
+
+The dashboards were developed to simulate executive business reporting environments commonly used in sales, operations, and management analytics.
+
+---
+
+# Tools & Technologies
+
+- Tableau
+- Microsoft Excel
+- CSV Data Processing
+- Data Visualization
+- Business Intelligence Reporting
+- Dashboard Design
+- KPI Monitoring
+- Geographic Mapping
+- Trend Analysis
+
+---
+
+# Analytical Focus Areas
+
+- Executive KPI dashboards
+- Regional sales analysis
+- Profitability analysis
+- Customer analytics
+- Category trend analysis
+- Geographic performance analysis
+- Comparative business reporting
+- Interactive dashboard reporting
+
+---
+
+# Dashboard Components
+
+## Executive Metric Dashboard
+
+The executive dashboard provides a high-level overview of organizational performance through:
+- KPI cards
+- regional heatmaps
+- state-level hotspot analysis
+- customer performance reporting
+- profitability monitoring
+
+Key KPIs include:
+- Customers
+- Orders
+- Sales
+- Profit
+- Profit Ratio
+- Average Unit Price
+
+### Dashboard Preview
+
+![Executive Dashboard](./dashboards/Executive_Dashboard.png)
+
+---
+
+## Sales Map Dashboard
+
+Interactive geographic dashboard visualizing:
+- state-level sales distribution
+- regional sales performance
+- category-level comparisons
+- profit concentration
+
+### Dashboard Preview
+
+![Sales Map](./dashboards/Sales_Map.png)
+
+---
+
+# Supporting Visualizations
+
+## Regional Sales vs Profit Comparison
+
+This dual-axis visualization compares sales and profit performance across business regions to identify high-performing and underperforming operational areas.
+
+![Dual Axis Visualization](./tables/Dual%20Axis.png)
+
+---
+
+## Category Sales Comparison
+
+Comparative category analysis highlighting sales performance across:
+- Furniture
+- Supplies
+- Technology
+
+![Category Sales Comparison](./tables/More%20Sales.png)
+
+---
+
+## Regional Segment Analysis
+
+Regional segmentation dashboard analyzing:
+- sales
+- profit
+- average profit margins
+- customer segments
+
+The dashboard supports comparative operational analysis across multiple business regions.
+
+![Regional Segment Analysis](./tables/Region.png)
+
+---
+
+## Category Trend Analysis
+
+Trend analysis dashboard tracking category sales growth over time to identify performance patterns and sales movement trends.
+
+![Category Trends](./tables/Sales.png)
+
+---
+
+# Key Insights
+
+- West and East regions demonstrated the strongest overall sales performance.
+- Technology categories showed strong upward sales growth trends over time.
+- Regional profitability varied significantly across customer segments.
+- Geographic dashboards improved visibility into state-level sales concentration and operational hotspots.
+- Executive KPI dashboards support faster business performance monitoring and reporting.
+
+---
+
+# Repository Structure
+
+```text
+Tableau-Sales-Dashboard/
+│
+├── data/
+│   ├── 2026-Tableau-Hands-On.xlsx
+│   ├── 2026-Traffic Accidents.csv
+│   └── README.md
+│
+├── dashboards/
+│   ├── Executive_Dashboard.png
+│   └── Sales_Map.png
+│
+├── tables/
+│   ├── Dual Axis.png
+│   ├── More Sales.png
+│   ├── Region.png
+│   └── Sales.png
+│
+├── reports/
+│   └── Tableau_Sales_Dashboard.pdf
+│
+└── README.md
+```
+
+---
+
+# Files
 
 | File | Description |
 |------|-------------|
-| `Tableau_Sales_Dashboard.pdf` | Exported dashboard views |
-| `2026-Tableau-Hands-On.xlsx` | Source sales data |
-| `2026-Traffic_Accidents.csv` | Supporting dataset |
+| `data/2026-Tableau-Hands-On.xlsx` | Primary Tableau sales and business reporting dataset |
+| `data/2026-Traffic Accidents.csv` | Geographic and analytical dataset used for visualization exercises |
+| `dashboards/Executive_Dashboard.png` | Executive KPI dashboard |
+| `dashboards/Sales_Map.png` | Geographic sales analysis dashboard |
+| `tables/Dual Axis.png` | Sales vs profit regional comparison |
+| `tables/More Sales.png` | Category sales comparison visualization |
+| `tables/Region.png` | Regional segmentation dashboard |
+| `tables/Sales.png` | Category trend analysis visualization |
+| `reports/Tableau_Sales_Dashboard.pdf` | Exported Tableau dashboard report |
 
 ---
 
-*Part of my data & analytics portfolio — [cameronbatts.github.io](https://cameronbatts.github.io)*
+# Data
+
+This project uses structured business reporting and analytical datasets in Excel and CSV format to support dashboard development and business intelligence reporting.
+
+The datasets were used to analyze:
+- sales performance
+- regional profitability
+- customer activity
+- category performance
+- operational trends
+- geographic analysis
+
+---
+
+# Skills Demonstrated
+
+- Tableau dashboard development
+- Executive KPI reporting
+- Business intelligence visualization
+- Geographic analysis
+- Interactive dashboard design
+- Comparative analysis
+- Trend analysis
+- Data storytelling
+
+---
+
+# Portfolio
+
+Portfolio Website: https://cameronbatts.github.io/Portfolio.html
+
+GitHub Profile: https://github.com/Cameron-Batts
