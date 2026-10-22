@@ -1,0 +1,13 @@
+{
+  "source": "Data/2026-Tableau-Hands-On.xlsx / Orders",
+  "scope": "All source rows; no dashboard filters applied",
+  "rows": 10194,
+  "distinct_customers": 804,
+  "distinct_orders": 5111,
+  "order_date_min": "2022-01-03",
+  "order_date_max": "2025-12-30",
+  "sales": 2326534.3543,
+  "profit": 292296.8145999999,
+  "profit_ratio": 0.12563614805849074,
+  "warning": "Executive preview has a different, unreconciled scope. No native Tableau workbook is included."
+}
