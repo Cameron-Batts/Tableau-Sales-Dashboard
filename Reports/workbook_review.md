@@ -29,7 +29,11 @@ The executive package uses its own Sample - Superstore extract; the sales packag
 
 All four uploaded packages passed ZIP integrity checks and their `.twb` XML parsed successfully. The two packaged public variants now included in the project contain their referenced Hyper extracts. The source spreadsheet's totals were independently recomputed with `Analysis/verify_sales.py`. Workbook structure, formulas, parameters and declared actions were inspected with `Analysis/inspect_workbooks.py`.
 
-A Hyper API query was attempted but could not start because the environment blocked its required local socket. No embedded-extract query, Tableau rendering, action execution, refresh test or calculation-engine equivalence test succeeded. Static definition inspection is not a full runtime validation.
+A Hyper API query was attempted but could not start because the environment blocked its required local socket. No embedded-extract query, refresh test or calculation-engine equivalence test succeeded in that automated environment. The owner subsequently reported successful manual loading and basic interaction checks for the sales workbook. Static definition inspection is not a full runtime validation.
+
+## Owner-reported Tableau checks
+
+On October 22, 2026, Cameron reported that Sales-Customer-Analytics.twbx opened normally in Tableau, filters updated charts and totals, clearing a filter restored the original view, tooltips displayed correctly, and chart selections behaved as expected. These are owner-reported manual checks, not independently observed runtime tests. Executive-Sales-Metrics.twbx, data refresh, embedded-extract queries and reconciliation of displayed KPI totals remain unverified.
 
 ## Reproduce
 
