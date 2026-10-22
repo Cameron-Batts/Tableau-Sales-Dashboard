@@ -9,5 +9,5 @@
   "sales": 2326534.3543,
   "profit": 292296.8145999999,
   "profit_ratio": 0.12563614805849074,
-  "warning": "Executive preview has a different, unreconciled scope. No native Tableau workbook is included."
+  "warning": "Executive preview uses a separate embedded source; its exact KPIs remain unverified. Supplied packaged workbooks are included."
 }

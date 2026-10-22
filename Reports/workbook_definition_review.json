@@ -1,0 +1,221 @@
+[
+  {
+    "file": "Workbooks/Executive-Sales-Metrics.twbx",
+    "sha256": "03b6ce76927b7c29109739806099569c8290bbe78298d21bdfab748b8557d274",
+    "tableau_version": "2025.3.1 (20253.25.1210.1815)",
+    "dashboards": [
+      {
+        "name": "Category Dashboard",
+        "type": "dashboard"
+      },
+      {
+        "name": "SS Dashboard",
+        "type": "dashboard"
+      }
+    ],
+    "worksheets": [
+      "Area Map",
+      "Avg Unit Price Header",
+      "Avg Unit Price KPI Trend",
+      "Category Bar",
+      "Category KPI Trend",
+      "Category Metric Regional HeatMap",
+      "Category Trend",
+      "Customers Header",
+      "Customers KPI Trend",
+      "Department Details",
+      "Dept KPI Trend",
+      "Detail",
+      "Metric Regional HeatMap",
+      "Metric Time Trend (Dept)",
+      "Orders Header",
+      "Orders KPI Trend",
+      "Profit Header",
+      "Profit KPI Trend",
+      "Profit Ratio Header",
+      "Profit Ratio KPI Trend",
+      "Sales Header",
+      "Sales KPI Trend",
+      "Top 10 Customers"
+    ],
+    "actions": [
+      "View Category Dashboard",
+      "Time Line -> Filter",
+      "Highlight",
+      "Filter 1 (generated)",
+      "Filter 2 (generated)",
+      "Highlight Category Rows",
+      "Category Filter",
+      "Heat Map -> Map Filter",
+      "Filter 3 (generated)"
+    ],
+    "calculated_fields": [
+      {
+        "field": "Profit Bin Size",
+        "formula": "2000.0"
+      },
+      {
+        "field": "Top Customers",
+        "formula": "15"
+      },
+      {
+        "field": "Choose a Metric",
+        "formula": "\"Profit\""
+      },
+      {
+        "field": "Customer Growth (%) KPI",
+        "formula": "(ZN(COUNTD([Customer ID])) - LOOKUP(ZN(COUNTD([Customer ID])), -1)) / ABS(LOOKUP(ZN(COUNTD([Customer ID])), -1))"
+      },
+      {
+        "field": "Chose a Metric",
+        "formula": "IF       [Parameters].[Top Customers (copy)] = \"Items\"    THEN COUNTD([Product Name])\r\n  ELSEIF [Parameters].[Top Customers (copy)] = \"Orders\"       THEN COUNTD([Order ID])\r\n  ELSEIF [Parameters].[Top Customers (copy)] = \"Sales\"        THEN SUM([Sales])\r\n  ELSEIF [Parameters].[Top Customers (copy)] = \"Profit\"       THEN SUM([Profit])\r\n  ELSEIF [Parameters].[Top Customers (copy)] = \"Unit Price\"   THEN AVG([Unit Price])\r\nEND"
+      },
+      {
+        "field": "Customer Growth KPI",
+        "formula": "if last() = 0 then (IF [Calculation1] > LOOKUP([Calculation1],-1) THEN \"Positive\" \r\n                ELSEIF [Calculation1] < LOOKUP([Calculation1],-1) THEN \"Negative\" \r\n                ELSE \"Flat\"\r\n                   END) \r\nEND"
+      },
+      {
+        "field": "Order Date (anchored)",
+        "formula": "// We need show more recent data\r\n// This formula shifts the order dates, so that the final order date in the data set is today\r\ndateadd('day', Datediff('day',date(#31/12/2013#), today()),[Order Date])"
+      },
+      {
+        "field": "Profit Ratio",
+        "formula": "sum([Profit]) / sum([Sales])"
+      },
+      {
+        "field": "Profit Bar Color",
+        "formula": "IF SUM([Profit]) <= 0 THEN \"Red\"\r\n  ELSE \"Black\"\r\nEND"
+      },
+      {
+        "field": "Orders Growth (%) KPI",
+        "formula": "(ZN(COUNTD([Order ID])) - LOOKUP(ZN(COUNTD([Order ID])), -1)) / ABS(LOOKUP(ZN(COUNTD([Order ID])), -1))"
+      },
+      {
+        "field": "Orders Growth KPI",
+        "formula": "if last() = 0 then (IF [Customer Growth (%) KPI (copy)] > LOOKUP([Customer Growth (%) KPI (copy)],-1) THEN \"Positive\" \r\n                ELSEIF [Customer Growth (%) KPI (copy)] < LOOKUP([Customer Growth (%) KPI (copy)],-1) THEN \"Negative\" \r\n                ELSE \"Flat\"\r\n                   END) \r\nEND"
+      },
+      {
+        "field": "[Number of Records]",
+        "formula": "1"
+      },
+      {
+        "field": "Choose a Metric Growth (%) KPI",
+        "formula": "(ZN([Calculation_2920303101856250]) - LOOKUP(ZN([Calculation_2920303101856250]), -1)) / ABS(LOOKUP(ZN([Calculation_2920303101856250]), -1))"
+      },
+      {
+        "field": "Profit Growth (%) KPI",
+        "formula": "(ZN(SUM([Profit])) - LOOKUP(ZN(SUM([Profit])), -1)) / ABS(LOOKUP(ZN(SUM([Profit])), -1))"
+      },
+      {
+        "field": "Choose a Metric Growth KPI",
+        "formula": "if last()=0 then (IF [Calculation_2920303101856250] > LOOKUP([Calculation_2920303101856250],-1) THEN \"Positive\" \r\n                ELSEIF [Calculation_2920303101856250] < LOOKUP([Calculation_2920303101856250],-1) THEN \"Negative\" \r\n                ELSE \"Flat\"\r\n                   END)\r\nEND"
+      },
+      {
+        "field": "Profit Growth KPI",
+        "formula": "if last() = 0 then (IF [Orders Growth (%) KPI (copy)] > LOOKUP([Orders Growth (%) KPI (copy)],-1) THEN \"Positive\" \r\n                ELSEIF [Orders Growth (%) KPI (copy)] < LOOKUP([Orders Growth (%) KPI (copy)],-1) THEN \"Negative\" \r\n                ELSE \"Flat\"\r\n                   END) \r\nEND"
+      },
+      {
+        "field": "Profit (bin)",
+        "formula": "[Profit]"
+      },
+      {
+        "field": "Sales Growth (%) KPI",
+        "formula": "(ZN(SUM([Sales])) - LOOKUP(ZN(SUM([Sales])), -1)) / ABS(LOOKUP(ZN(SUM([Sales])), -1))"
+      },
+      {
+        "field": "Sales Growth KPI",
+        "formula": "if last() = 0 then (IF [Profit Growth (%) KPI (copy)] > LOOKUP([Profit Growth (%) KPI (copy)],-1) THEN \"Positive\" \r\n                ELSEIF [Profit Growth (%) KPI (copy)] < LOOKUP([Profit Growth (%) KPI (copy)],-1) THEN \"Negative\" \r\n                ELSE \"Flat\"\r\n                   END) \r\nEND"
+      },
+      {
+        "field": "Avg Unit Price Growth (%) KPI",
+        "formula": "(ZN(AVG([Unit Price])) - LOOKUP(ZN(AVG([Unit Price])), -1)) / ABS(LOOKUP(ZN(AVG([Unit Price])), -1))"
+      },
+      {
+        "field": "Profit Ratio Growth (%) KPI",
+        "formula": "(ZN([Calculation_4250303083751663]) - LOOKUP(ZN([Calculation_4250303083751663]), -1)) / ABS(LOOKUP(ZN([Calculation_4250303083751663]), -1))"
+      },
+      {
+        "field": "Avg Unit Price Growth KPI",
+        "formula": "if last() = 0 then (IF [Sales Growth (%) KPI (copy 2)] > LOOKUP([Sales Growth (%) KPI (copy 2)],-1) THEN \"Positive\" \r\n                ELSEIF [Sales Growth (%) KPI (copy 2)] < LOOKUP([Sales Growth (%) KPI (copy 2)],-1) THEN \"Negative\" \r\n                ELSE \"Flat\"\r\n                   END) \r\nEND"
+      },
+      {
+        "field": "Profit Ratio Growth KPI",
+        "formula": "if last() = 0 then (IF [Sales Growth (%) KPI (copy)] > LOOKUP([Sales Growth (%) KPI (copy)],-1) THEN \"Positive\" \r\n                ELSEIF [Sales Growth (%) KPI (copy)] < LOOKUP([Sales Growth (%) KPI (copy)],-1) THEN \"Negative\" \r\n                ELSE \"Flat\"\r\n                   END) \r\nEND"
+      }
+    ],
+    "embedded_extracts": [
+      "Data/Duke - Superstore Metrics.twb Files/Sample - Superstore - English (Extract).hyper"
+    ],
+    "validation": "ZIP CRC and XML parsing passed. No Tableau rendering, action clicks, or Hyper queries performed."
+  },
+  {
+    "file": "Workbooks/Sales-Customer-Analytics.twbx",
+    "sha256": "205dff2e2c052303dcdaae3997350ea0498df0014ebdc43b09b6cb514fac5027",
+    "tableau_version": "2025.3.1 (20253.25.1210.1815)",
+    "dashboards": [
+      {
+        "name": "My First Dashboard",
+        "type": "dashboard"
+      },
+      {
+        "name": "Story 1",
+        "type": "storyboard"
+      }
+    ],
+    "worksheets": [
+      "Category Trends",
+      "Category Trends (2)",
+      "Customer Detail",
+      "Data",
+      "Dual Axis",
+      "Filters",
+      "Measure Names",
+      "Sales Map",
+      "Scatter",
+      "Scatter (2)",
+      "Sheet 12",
+      "Sheet 13",
+      "Sheet 14",
+      "Sheet 4"
+    ],
+    "actions": [],
+    "calculated_fields": [
+      {
+        "field": "Top n Customer",
+        "formula": "10"
+      },
+      {
+        "field": "Shipping Target",
+        "formula": "3"
+      },
+      {
+        "field": "Customer",
+        "formula": "COUNTD( [Customer ID] )"
+      },
+      {
+        "field": "Order Count",
+        "formula": "COUNTD( [Order ID] )"
+      },
+      {
+        "field": "Profit Margin B",
+        "formula": "[Profit]/[Sale Amount]"
+      },
+      {
+        "field": "Profit Margin G",
+        "formula": "SUM([Profit])/SUM([Sale Amount])"
+      },
+      {
+        "field": "Days to Ship",
+        "formula": "DATEDIFF('day',[Order Date], [Ship Date])"
+      },
+      {
+        "field": "Shipping Target Met",
+        "formula": "IF AVG([Calculation_1156302897012740]) > [Parameters].[Parameter 2] THEN \"Problem\"\nELSE \"All Good\"\nEND"
+      }
+    ],
+    "embedded_extracts": [
+      "Data/MSQM Day 1 V2.twb Files/Orders + Manager.hyper"
+    ],
+    "validation": "ZIP CRC and XML parsing passed. No Tableau rendering, action clicks, or Hyper queries performed."
+  }
+]

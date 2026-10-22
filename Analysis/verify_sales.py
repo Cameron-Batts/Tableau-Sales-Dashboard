@@ -24,7 +24,7 @@ summary = {
     "sales": sales,
     "profit": profit,
     "profit_ratio": profit / sales if sales else None,
-    "warning": "Executive preview has a different, unreconciled scope. No native Tableau workbook is included."
+    "warning": "Executive preview uses a separate embedded source; its exact KPIs remain unverified. Supplied packaged workbooks are included."
 }
 output = root / "Reports"
 output.mkdir(exist_ok=True)
